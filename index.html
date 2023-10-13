@@ -102,8 +102,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
                                     <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark"></strong></p>
-                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">BULLS & BEARS</h1>
-                                    <p class="fs-4 text-white animated zoomIn"><strong class="text-dark">THE FINANCE CLUB OF PDEU</strong></p>
+                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">BAZAAR 2023</h1>
+                                    <p class="fs-4 text-white animated zoomIn"><strong class="text-dark">MARKET STIMULATION GAME</strong></p>
                                     <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a>
                                 </div>
                             </div>
@@ -409,66 +409,9 @@
                 <h1 class="display-6">Our Events</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/event-1.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Introductory Event</h4>
-                            <p>Bulls & Bears</p>
-                            <h4 class="text-primary">3rd November</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="registration_form.html" class="btn btn-dark rounded-pill py-2 px-4 m-2">Register for the event <i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/event-2.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Subcommittee Interview</h4>
-                            <p>Bulls & Bears</p>
-                            <h4 class="text-primary">3rd November</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="registration_form.html" class="btn btn-dark rounded-pill py-2 px-4 m-2">Register for the event <i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/event-3.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Fin-Shooting</h4>
-                            <p>Answer the quiz and play</p>
-                            <h4 class="text-primary">3rd November</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="registration_form.html" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Register for the event <i class="fa fa-arrow-right ms-2"></i></a>
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4" id="evenBox">
                         </div>
                     </div>
                 </div>
@@ -488,7 +431,7 @@
                 <p class="fs-5 fw-medium fst-italic text-white">BULLS & BEARS</p>
                 <h1 class="display-6">OUR ADVISORS 2022-23</h1>
             </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s" id="advs">
                 <div class="testimonial-item p-4 p-lg-5">
                     <p class="mb-4">My time with Bulls&Bears was wholesome - from starting as a Public Relations member to finishing as the club’s President. I had the good fortune of being involved during an online-to-offline transition and amongst a host of creative and management ideas. It has always been an aim to maximize the club’s scope and help spread basic financial understanding. More than a club, it is a living entity - with its ever expanding audience, superb events and fantastic members. Greatly appreciative of the times I spent with Bulls&Bears.
                         Cheers, VD</p>
@@ -576,7 +519,7 @@
                             <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
@@ -701,6 +644,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="advisor.js"></script>
+    <script src="events.js"></script>
+    <script>
+
+       
+
+        events('evenBox');
+        //advisor('advs');
+    </script>
 </body>
 
 </html>
