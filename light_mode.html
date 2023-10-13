@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light/Dark Mode Switcher</title>
+    <style>
+        :root {
+            --background-color-light: #ffffff;
+            --text-color-light: #000000;
+            --background-color-dark: #222222;
+            --text-color-dark: #ffffff;
+        }
+
+        body {
+            background-color: var(--background-color-light);
+            color: var(--text-color-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Apply dark mode styles when the 'dark-mode' class is present on the body */
+        body.dark-mode {
+            background-color: var(--background-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        #mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Light/Dark Mode Switcher</h1>
+    <button id="mode-toggle">Toggle Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
