@@ -31,7 +31,7 @@ function blog(id) {
             <h1 class="display-6">${blogarray[i].title}</h1>
         </div>
         <p class="mb-4 fst-italic">${blogarray[i].short}</p>
-        <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+        <a href="blogbrief.html" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
     </div>`;
     }
     document.getElementById(id).innerHTML = load;
