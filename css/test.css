@@ -60,6 +60,6 @@ button:hover {
 }
 
 button:focus {
-    background-color: white;
+    /* background-color: white; */
     outline: none;
 }

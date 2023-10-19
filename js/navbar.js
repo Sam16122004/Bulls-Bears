@@ -18,7 +18,7 @@ load+=`<div class="container">
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu bg-light rounded-0 m-0">
-                    <a href="findepth.html" class="dropdown-item">FINDEPTH</a>
+                    <a href="findepthmain.html" class="dropdown-item">FINDEPTH</a>
                     <a href="blog.html" class="dropdown-item">Blog</a>
                     <a href="financial_literacy.html" class="dropdown-item">FINANCIAL LITERACY</a>
                     <a href="bazaar.html" class="dropdown-item">BAZAAR</a>

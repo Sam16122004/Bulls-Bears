@@ -33,32 +33,30 @@ function footBar(id) {
           </div>
           <div class="col-lg-3 col-md-6">
               <h4 class="text-primary mb-4">Quick Links</h4>
-              <a class="btn btn-link" href>About Us</a>
-              <a class="btn btn-link" href>Contact Us</a>
-              <a class="btn btn-link" href>Our Events</a>
-              <a class="btn btn-link" href>Findepth Magazine</a>
-              <a class="btn btn-link" href>Blog</a>
-              <a class="btn btn-link" href>Photo Gallery</a>
+              <a class="btn btn-link" href="about.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="event.html">Our Events</a>
+              <a class="btn btn-link" href="findepth.html">Findepth Magazine</a>
+              <a class="btn btn-link" href="blog.html">Blog</a>
+              <a class="btn btn-link" href="#">Photo Gallery</a>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-4">
               <h4 class="text-primary mb-4">CLUB TIMINGS</h4>
               <p class="mb-1">Monday - Friday</p>
               <h6 class="text-light">09:00 am - 06:00 pm</h6>
-              <p class="mb-1">Saturday-Sunday</p>
-              <h6 class="text-light">Closed</h6>
-          </div>
-          <div class="col-lg-3 col-md-6">
+              </div>
+              <div class="col-lg-3 col-md-6">
               <h4 class="text-primary mb-4">Register</h4>
               <p>Thank you for being a part of the finance world</p>
               <div class="position-relative w-100">
-                  <input
-                      class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                      type="text" placeholder="Your email">
+              <input
+              class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+              type="text" placeholder="Your email">
                   <button type="button"
                       class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-              </div>
-          </div>
-      </div>
+                      </div>
+                      </div>
+                      </div>
   </div>
 </div>`;
     document.getElementById(id).innerHTML = load;
@@ -71,3 +69,5 @@ function footBar(id) {
 // <a
 // class="btn btn-square btn-primary rounded-circle me-2"
 // href><i class="fab fa-youtube"></i></a>
+{/* <p class="mb-1">Saturday-Sunday</p>
+<h6 class="text-light">Closed</h6> */}

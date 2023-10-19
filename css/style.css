@@ -392,8 +392,8 @@
 }
 
 
-/*** Store ***/
-.store-item .store-overlay {
+/*** segment ***/
+.segment-item .segment-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -408,7 +408,7 @@
     transition: .5s;
 }
 
-.store-item:hover .store-overlay {
+.segment-item:hover .segment-overlay {
     opacity: 1;
 }
 
