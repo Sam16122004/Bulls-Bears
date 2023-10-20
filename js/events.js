@@ -22,13 +22,6 @@ var array=[
                 <div class="segment-item position-relative text-center">
                     <img class="img-fluid" src="${array[i].imgSRC}" alt="">
                     <div class="p-4">
-                        <div class="text-center mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                        </div>
                         <h4 class="mb-3">${array[i].title}</h4>
                         <p>Bulls & Bears</p>
                         <h4 class="text-primary">${array[i].date}</h4>

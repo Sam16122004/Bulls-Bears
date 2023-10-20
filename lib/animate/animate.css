@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -67,8 +59,6 @@
 .flash {
   animation-name: flash;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {
   from {
@@ -223,8 +213,6 @@
 .tada {
   animation-name: tada;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes wobble {
   from {
@@ -860,7 +848,7 @@
 }
 
 .animated.flip {
-  -webkit-backface-visibility: visible;
+  --webkit-backface-visibility: visible;
   backface-visibility: visible;
   animation-name: flip;
 }
@@ -892,7 +880,7 @@
 }
 
 .flipInX {
-  -webkit-backface-visibility: visible !important;
+  --webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInX;
 }
@@ -924,7 +912,7 @@
 }
 
 .flipInY {
-  -webkit-backface-visibility: visible !important;
+  --webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInY;
 }
@@ -947,7 +935,7 @@
 
 .flipOutX {
   animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
+  --webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 
@@ -968,7 +956,7 @@
 }
 
 .flipOutY {
-  -webkit-backface-visibility: visible !important;
+  --webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipOutY;
 }
@@ -1245,7 +1233,7 @@
   animation-name: jackInTheBox;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 
 @keyframes rollIn {
   from {
@@ -1263,7 +1251,7 @@
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 
 @keyframes rollOut {
   from {

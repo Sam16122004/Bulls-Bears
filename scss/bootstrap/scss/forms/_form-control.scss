@@ -44,10 +44,7 @@
     }
   }
 
-  // Add some height to date inputs on iOS
-  // https://github.com/twbs/bootstrap/issues/23307
-  // TODO: we can remove this workaround once https://bugs.webkit.org/show_bug.cgi?id=198959 is resolved
-  &::-webkit-date-and-time-value {
+  &::--webkit-date-and-time-value {
     // Multiply line-height by 1em if it has no unit
     height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
   }
@@ -55,7 +52,6 @@
   // Placeholder
   &::placeholder {
     color: $input-placeholder-color;
-    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
   }
 
@@ -68,7 +64,6 @@
   &:read-only {
     background-color: $input-disabled-bg;
     border-color: $input-disabled-border-color;
-    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
   }
 
@@ -92,7 +87,7 @@
     background-color: $form-file-button-hover-bg;
   }
 
-  &::-webkit-file-upload-button {
+  &::--webkit-file-upload-button {
     padding: $input-padding-y $input-padding-x;
     margin: (-$input-padding-y) (-$input-padding-x);
     margin-inline-end: $input-padding-x;
@@ -107,7 +102,7 @@
     @include transition($btn-transition);
   }
 
-  &:hover:not(:disabled):not(:read-only)::-webkit-file-upload-button {
+  &:hover:not(:disabled):not(:read-only)::--webkit-file-upload-button {
     background-color: $form-file-button-hover-bg;
   }
 }
@@ -154,7 +149,7 @@
     margin-inline-end: $input-padding-x-sm;
   }
 
-  &::-webkit-file-upload-button {
+  &::--webkit-file-upload-button {
     padding: $input-padding-y-sm $input-padding-x-sm;
     margin: (-$input-padding-y-sm) (-$input-padding-x-sm);
     margin-inline-end: $input-padding-x-sm;
@@ -173,16 +168,13 @@
     margin-inline-end: $input-padding-x-lg;
   }
 
-  &::-webkit-file-upload-button {
+  &::--webkit-file-upload-button {
     padding: $input-padding-y-lg $input-padding-x-lg;
     margin: (-$input-padding-y-lg) (-$input-padding-x-lg);
     margin-inline-end: $input-padding-x-lg;
   }
 }
 
-// Make sure textareas don't shrink too much when resized
-// https://github.com/twbs/bootstrap/pull/29124
-// stylelint-disable selector-no-qualifying-type
 textarea {
   &.form-control {
     min-height: $input-height;
@@ -207,12 +199,12 @@ textarea {
     cursor: pointer;
   }
 
-  &::-moz-color-swatch {
+  &::--moz-color-swatch {
     height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
     @include border-radius($input-border-radius);
   }
 
-  &::-webkit-color-swatch {
+  &::--webkit-color-swatch {
     height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
     @include border-radius($input-border-radius);
   }

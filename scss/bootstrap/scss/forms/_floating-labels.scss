@@ -30,8 +30,8 @@
       padding-top: $form-floating-input-padding-t;
       padding-bottom: $form-floating-input-padding-b;
     }
-    // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
-    &:-webkit-autofill {
+    // Duplicated because `:--webkit-autofill` invalidates other selectors when grouped
+    &:--webkit-autofill {
       padding-top: $form-floating-input-padding-t;
       padding-bottom: $form-floating-input-padding-b;
     }
@@ -50,8 +50,8 @@
       transform: $form-floating-label-transform;
     }
   }
-  // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
-  > .form-control:-webkit-autofill {
+  // Duplicated because `:--webkit-autofill` invalidates other selectors when grouped
+  > .form-control:--webkit-autofill {
     ~ label {
       opacity: $form-floating-label-opacity;
       transform: $form-floating-label-transform;

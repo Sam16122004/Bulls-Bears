@@ -16,15 +16,15 @@
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
-    &::-webkit-slider-thumb { box-shadow: $form-range-thumb-focus-box-shadow; }
-    &::-moz-range-thumb     { box-shadow: $form-range-thumb-focus-box-shadow; }
+    &::--webkit-slider-thumb { box-shadow: $form-range-thumb-focus-box-shadow; }
+    &::--moz-range-thumb     { box-shadow: $form-range-thumb-focus-box-shadow; }
   }
 
-  &::-moz-focus-outer {
+  &::--moz-focus-outer {
     border: 0;
   }
 
-  &::-webkit-slider-thumb {
+  &::--webkit-slider-thumb {
     width: $form-range-thumb-width;
     height: $form-range-thumb-height;
     margin-top: ($form-range-track-height - $form-range-thumb-height) / 2; // Webkit specific
@@ -40,7 +40,7 @@
     }
   }
 
-  &::-webkit-slider-runnable-track {
+  &::--webkit-slider-runnable-track {
     width: $form-range-track-width;
     height: $form-range-track-height;
     color: transparent; // Why?
@@ -51,7 +51,7 @@
     @include box-shadow($form-range-track-box-shadow);
   }
 
-  &::-moz-range-thumb {
+  &::--moz-range-thumb {
     width: $form-range-thumb-width;
     height: $form-range-thumb-height;
     @include gradient-bg($form-range-thumb-bg);
@@ -66,7 +66,7 @@
     }
   }
 
-  &::-moz-range-track {
+  &::--moz-range-track {
     width: $form-range-track-width;
     height: $form-range-track-height;
     color: transparent;
@@ -80,11 +80,11 @@
   &:disabled {
     pointer-events: none;
 
-    &::-webkit-slider-thumb {
+    &::--webkit-slider-thumb {
       background-color: $form-range-thumb-disabled-bg;
     }
 
-    &::-moz-range-thumb {
+    &::--moz-range-thumb {
       background-color: $form-range-thumb-disabled-bg;
     }
   }

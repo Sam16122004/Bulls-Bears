@@ -1,22 +1,3 @@
-/**
- * turn.js 3rd release
- * www.turnjs.com
- *
- * Copyright (C) 2012, Emmanuel Garcia.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- * 1. Redistributions of source code must retain the above copyright
- * notice, this list of conditions and the following disclaimer.
- *
- * 2. Any redistribution, use, or modification is done solely for personal 
- * benefit and not for any commercial purpose or for monetary gain.
- * 
- **/
-
 (function($) {
 
     'use strict';
@@ -193,16 +174,16 @@
         
             var j, cols = [];
     
-            if (vendor=='-webkit-') {
+            if (vendor=='--webkit-') {
             
                 for (j = 0; j<numColors; j++)
                         cols.push('color-stop('+colors[j][0]+', '+colors[j][1]+')');
                 
-                obj.css({'background-image': '-webkit-gradient(linear, '+p0.x+'% '+p0.y+'%,  '+p1.x+'% '+p1.y+'%, '+ cols.join(',') +' )'});
+                obj.css({'background-image': '--webkit-gradient(linear, '+p0.x+'% '+p0.y+'%,  '+p1.x+'% '+p1.y+'%, '+ cols.join(',') +' )'});
     
             } else {
     
-                // This procedure makes the gradients for non-webkit browsers
+                // This procedure makes the gradients for non--webkit browsers
                 // It will be reduced to one unique way for gradients in next versions
                 
                 p0 = {x:p0.x/100 * obj.width(), y:p0.y/100 * obj.height()};
