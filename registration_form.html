@@ -66,37 +66,126 @@
     <!-- Page Header End -->
 
     <!-- Contact Start -->
-    <div class="container-xxl contact py-5">
+    <header>
         <div class="container">
-            <h3 class="mb-4">Register for your events from here</h3>
-            <form action="" method="post">
-                <div class="row g-3">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" />
-                        <label for="name">Name</label>
-                    </div>
-                </div>
-                <div class="row g-1">
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" />
-                        <label for="email">PDEU Email ID</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" />
-                        <label for="subject">Roll Number</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">
-                        Submit
-                    </button>
-                </div>
+           <div class="row">
+              <div class="col-md-12">
+                 <h1> Online Registration Form </h1>
+              </div>
+           </div>
         </div>
-        </form>
-    </div>
-    </div>
+     </header>
+     <div class="container mt-3">
+        <div class="row">
+           <div class="col-md-8">
+              <form>
+                 <div class="card shadow mb-4">
+                    <div class="card-body">
+                       <div class="form-row">
+                          <div class="col-md-12">
+                             <h2 class="from-title"> Registration Form for Stocks 101 event <span>  Step-1 </span> </h2>
+                          </div>
+                       </div>
+                       <div class="form-group row">
+                          <label class="col-md-4" for="company"> Name : </label>
+                          <div class="col-md-8">
+                             <input type="text" name="name" value="" size="40"  class="required form-control" placeholder="Enter Your Name">
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label class="col-md-4" for="company"> Roll Number : </label>
+                           <div class="col-md-8">
+                              <input type="text" name="dob" value="" size="40"  class="required form-control dob" placeholder="Roll Number">
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label class="col-md-4" for="company"> Email Id : </label>
+                           <div class="col-md-8">
+                              <input type="text" name="dob" value="" size="40"  class="required form-control dob" placeholder="PDEU Email Id">
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label class="col-md-4" for="company"> School : </label>
+                           <div class="col-md-8">
+                              <select class="form-control my-select2" name="applyas" id="applyas"  onchange="studnts(this.value);setlbls('')">
+                                 <option value="">Select School</option>
+                                 <option value="SOT">SOT</option>
+                                 <option value="SLS">SLS</option>
+                                 <option value="SOET">SOET</option>
+                                 <option value="SOEM">SOEM</option>
+                              </select>
+                           </div>
+                        </div>
+                       <div class="form-group row">
+                          <label class="col-md-4" for="company"> Year : </label>
+                          <div class="col-md-8">
+                             <select name="board" id="board" class="form-control my-select2" onchange="ch_borad(this.value)">
+                                <option value="">Select Year</option>
+                                <option value="1st">1st</option>
+                                <option value="2nd">2nd</option>
+                                <option value="3rd">3rd</option>
+                                <option value="4th">4th</option>
+                                <!-- <option value="Others"></option> -->
+                             </select>
+                          </div>
+                       </div>
+                       <div class="form-group row">
+                        <label class="col-md-4" for="company"> Branch : </label>
+                        <div class="col-md-8">
+                           <input type="text" name="dob" value="" size="40"  class="required form-control dob" placeholder="Branch">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-md-4" for="company"> Contact Number : </label>
+                        <div class="col-md-8">
+                           <input type="text" name="dob" value="" size="40"  class="required form-control dob" placeholder="Contact Number">
+                        </div>
+                     </div>
+                       <!-- <div class="form-row">
+                          <div class="col-md-12">
+                             <h3 class="from-title">  Details of Marks/Grade [Marks in Percentage, don't use symbol(%)] </h3>
+                          </div>
+                       </div>
+                       <div class="form-group row">
+                          <div class="col-md-4">
+                             <label  for="company"> English : </label>
+                             <input type="text" name="sub" value="" size="40"  class="required form-control sub" placeholder="English">
+                          </div>
+                          <div class="col-md-4">
+                             <label  for="company"> Mathematics  : </label>
+                             <input type="text" name="sub" value="" size="40"  class="required form-control sub" placeholder="Mathematics">
+                          </div>
+                          <div class="col-md-4">
+                             <label  for="company"> Science : </label>
+                             <input type="text" name="sub" value="" size="40"  class="required form-control sub" placeholder="Science">
+                          </div>
+                       </div>
+                       <div class="form-group row">
+                          <label class="col-md-4" for="company"> Board Roll No.   : </label>
+                          <div class="col-md-8">
+                             <input type="text" name="regno" id="regno" value="" size="40" class="required form-control" minlength="7" maxlength="7" placeholder="Enter Board Roll No.">
+                          </div>
+                       </div> -->
+                       <p class="text-danger text-center"> Note:- keep draft ready before proceeding for online registration. </p>
+                       <div class="form-group">
+                          <div class="text-center">
+                             <a  href="" class="btn btn-success px-4"> Proceed to Register </a>
+                             <button type="submit" class="btn btn-danger px-4"> Cancel </button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </form>
+           </div>
+           <div class="col-md-4">
+              <div class="card shadow mb-4" style="height:98%;">
+                 <div class="card-body">
+                    <img class="img-fluid" src="img/event/event-4.jpg">
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
     <!-- Contact End -->
 
         <!-- Footer Start -->
@@ -142,6 +231,10 @@
     <script>navbar('navBox');</script>
     <script src="js/footer.js"></script>
     <script>footBar('footBox');</script>
+    <script> $(document).ready(function () {
+        $('.my-select2').select2();
+        $( ".dob" ).datepicker();
+    });</script>
 </body>
 
 </html>
