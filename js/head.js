@@ -22,7 +22,7 @@ var heads=[
             data-wow-delay="0.5s"><a href class="d-block TEAM-item rounded">
             <img src="${heads[i].imgSRC}" alt>
             <div
-                class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                class="bg-white shadow-sm text-center p-4 position-relative  mx-4">
                 <h4 class="text-primary">${heads[i].name}</h4>
                 <span class="text-body">${heads[i].designation}</span>
             </div>

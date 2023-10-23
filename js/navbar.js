@@ -13,7 +13,7 @@ load+=`<div class="container">
         <div class="navbar-nav ms-auto">
             <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="team.html" class="nav-item nav-link">TEAM</a>
+            <a href="teammain.html" class="nav-item nav-link">TEAM</a>
             <a href="event.html" class="nav-item nav-link">EVENTS</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
