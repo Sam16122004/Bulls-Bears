@@ -667,3 +667,81 @@ p {
 .book:hover > .book-content p {
 	opacity: 1;
 }
+
+.TEAM-carousel2 .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.TEAM-carousel2 .owl-nav .owl-prev,
+.TEAM-carousel2 .owl-nav .owl-next {
+    margin: 0 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+.TEAM-carousel2 .owl-nav .owl-prev:hover,
+.TEAM-carousel2 .owl-nav .owl-next:hover {
+    background: #FFFFFF;
+    color: var(--primary);
+}
+/* <--------------------------------> */
+.TEAM-carousel3 .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.TEAM-carousel3 .owl-nav .owl-prev,
+.TEAM-carousel3 .owl-nav .owl-next {
+    margin: 0 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+.TEAM-carousel3 .owl-nav .owl-prev:hover,
+.TEAM-carousel3 .owl-nav .owl-next:hover {
+    background: #FFFFFF;
+    color: var(--primary);
+}
+/* ............................................... */
+.TEAM-carousel4 .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.TEAM-carousel4 .owl-nav .owl-prev,
+.TEAM-carousel4 .owl-nav .owl-next {
+    margin: 0 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+.TEAM-carousel4 .owl-nav .owl-prev:hover,
+.TEAM-carousel4 .owl-nav .owl-next:hover {
+    background: #FFFFFF;
+    color: var(--primary);
+}

@@ -1,18 +1,23 @@
 var array=[
     {
-        title: "Subcommittee Interview",
-        date: "2,3,4 September 2023",
-        imgSRC:"img/event-2.jpg"
+        title: "STOCKS 101",
+        date: "26 October 2023",
+        imgSRC:"img/event/event-4.jpg"
     },
     {
         title: "Fin-Shooting",
         date: "27 September 2023",
-        imgSRC:"img/event-3.jpg"
+        imgSRC:"img/event/event-3.jpg"
+    },
+    {
+        title: "Subcommittee Interview",
+        date: "2,3,4 September 2023",
+        imgSRC:"img/event/event-2.jpg"
     },
     {
         title: "Introductory event",
         date: "28 August 2023",
-        imgSRC:"img/event-1.jpg"
+        imgSRC:"img/event/event-1.jpg"
     }
     ]
     function events(id){

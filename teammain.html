@@ -68,6 +68,7 @@
         </div>
         <!-- Page Header End -->
 
+        <!-- CORE START  -->
         <div class="container-fluid TEAM py-5 my-5">
             <div class="container py-2">
                 <div class="section-title text-center mx-auto fadeInUp"
@@ -77,7 +78,7 @@
                 </div>
                 <div class="owl-carousel TEAM-carousel fadeInUp">
                     <a href class="d-block TEAM-item rounded">
-                        <img src="img/Parva_jani.jpg" alt>
+                        <img src="img/Team/heads/Parva_jani.jpg" alt>
                         <div
                             class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                             <h4 class="text-primary">PARVA JANI</h4>
@@ -85,7 +86,7 @@
                         </div>
                     </a>
                     <a href class="d-block TEAM-item rounded">
-                        <img src="img/soham_patel.jpg" alt>
+                        <img src="img/Team/heads/soham_patel.jpg" alt>
                         <div
                             class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                             <h4 class="text-primary">SOHAM PATEL</h4>
@@ -93,7 +94,7 @@
                         </div>
                     </a>
                     <a href class="d-block TEAM-item rounded">
-                        <img src="img/Umang_sukhadia.jpg" alt>
+                        <img src="img/Team/heads/Umang_sukhadia.jpg" alt>
                         <div
                             class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                             <h4 class="text-primary">UMANG SUKHADIA</h4>
@@ -103,9 +104,70 @@
                 </div>
             </div>
         </div>
-        <!-- TEAM End -->
+        <!-- CORE End -->
 
-        <!-- TEAM Start -->
+        <!-- HEADS START  -->
+        <div class="container-fluid TEAM py-5 my-5">
+            <div class="container py-5">
+                <div class="section-title text-center mx-auto wow fadeInUp"
+                    data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">HEADS</p>
+                    <h1 class="display-6"></h1>
+                </div>
+                <div class="owl-carousel TEAM-carousel3 wow fadeInUp"
+                    data-wow-delay="0.5s">
+                </div>
+                <script>
+                const headMembers = [
+                    {name: "SAMYAK GANDHI", role: "TECH & IT HEAD",image: "img/Team/heads/Samyak_Gandhi.jpg",},
+                    {name: "HARSH HIRANI", role: "TECH & IT HEAD",image: "img/Team/heads/harsh_hirani.jpg",},
+                    {name: "KHUSH SHAH", role: "PUBLIC RELATION HEAD",image: "img/Team/heads/khush_shah.jpg",},
+                    {name: "UMANG GAJJAR", role: "PUBLICITY HEAD",image: "img/Team/heads/umang_gajjar.jpg",},
+                    {name: "ARJUN PATEL", role: "EVENT MANAGEMENT HEAD",image: "img/Team/heads/arjun_patel.jpg",},
+                    {name: "DIYA SHAH", role: "DIGITAL MARKETING HEAD",image: "img/Team/heads/diya_shah.jpg",},
+                    {name: "JENIS BARAD", role: "GRAPHIC DESIGNING AND VIDEO EDITING HEAD",image: "img/Team/heads/jenis_barad.jpg",},
+                    {name: "YASH PAREKH", role: "CONTENT AND DOCUMENTATION HEAD",image: "img/Team/heads/yash_parekh.jpg",},
+                    {name: "KARTIK AKHBARI", role: "EVENT MANAGEMENT HEAD",image: "img/Team/heads/kartik_akhbari.jpg",},
+                    {name: "VISHWA GANDHI", role: "CONTENT AND DOCUMENTATION HEAD",image: "img/Team/heads/vishwa_gandhi.jpg",},
+                    {name: "DEEPAK SINGHI", role: "DIGITAL MARKETING HEAD",image: "img/Team/heads/deepak_singhi.jpg",},
+                    {name: "KATHAN PATEL", role: "GRAPHIC DESIGNING AND VIDEO EDITING HEAD",image: "img/Team/heads/kathan_patel.jpg",},
+                    {name: "SUNAND JHANWAR", role: "LOGISTICS HEAD",image: "img/Team/heads/sunand_jhannwar.jpg",},
+                    ];
+                const headCarousel = document.querySelector('.TEAM-carousel3');
+                headMembers.forEach(member => {
+                    const memberItem = document.createElement('a');
+                    memberItem.href = '';
+                    memberItem.className = 'd-block TEAM-item rounded';
+            
+                    const memberImage = document.createElement('img');
+                    memberImage.src = member.image;
+                    memberImage.alt = member.name;
+            
+                    const memberInfo = document.createElement('div');
+                    memberInfo.className = 'bg-white shadow-sm text-center p-4 position-relative  mx-4';
+            
+                    const memberName = document.createElement('h4');
+                    memberName.className = 'text-primary';
+                    memberName.textContent = member.name;
+            
+                    const memberRole = document.createElement('span');
+                    memberRole.className = 'text-body';
+                    memberRole.textContent = member.role;
+            
+                    memberInfo.appendChild(memberName);
+                    memberInfo.appendChild(memberRole);
+            
+                    memberItem.appendChild(memberImage);
+                    memberItem.appendChild(memberInfo);
+            
+                    headCarousel.appendChild(memberItem);
+                });
+            </script>
+            </div>
+        </div>
+        <!-- HEADS END  -->
+
+        <!-- DEPARTMENT Start -->
         <div class="container-fluid TEAM py-5 my-5">
             <div class="container py-5">
                 <div class="section-title text-center mx-auto wow fadeInUp"
@@ -114,22 +176,22 @@
                         Departments</p>
                     <h1 class="display-6"></h1>
                 </div>
-                <div class="owl-carousel TEAM-carousel wow fadeInUp"
+                <div class="owl-carousel TEAM-carousel2 wow fadeInUp"
                     data-wow-delay="0.5s">
                 </div>
                 <script>
                 const teamMembers = [
-                {    name: 'CORE',href:'event.html',image: 'img/core.png',},
-                {    name: 'LOGISTICS',href:'logistics.html',image: 'img/logistics.png',},
-                {    name: 'EVENT MANAGEMENT',href:'em.html',image: 'img/em.png',},
-                {    name: 'PUBLICITY',href:'publicity.html',image: 'img/marketing.png',},
-                {    name: 'PUBLIC RELATION',href:'pr.html',image: 'img/pr.png',},
-                {    name: 'CONTENT AND DOCUMENTATION',href:'cnd.html',image: 'img/c&d.png',},
-                {    name: 'GRAPHIC DESIGNING',href:'gd.html',image: 'img/graphic designing.png',},
-                {    name: 'DIGITAL MARKETING',href:'dm.html',image: 'img/digital marketing.png',},
-                {    name: 'Tech & IT',href:'tech_n_it.html',image: 'img/tech&it.png',},
+                {    name: 'Tech & IT',href:'tech_n_it.html',image: 'img/Team/logo of department/tech&it.png',},
+                {    name: 'LOGISTICS',href:'logistics.html',image: 'img/Team/logo of department/logistics.png',},
+                {    name: 'CONTENT AND DOCUMENTATION',href:'cnd.html',image: 'img/Team/logo of department/c&d.png',},
+                {    name: 'EVENT MANAGEMENT',href:'em.html',image: 'img/Team/logo of department/em.png',},
+                {    name: 'GRAPHIC DESIGNING',href:'gd.html',image: 'img/Team/logo of department/graphic designing.png',},
+                {    name: 'PUBLICITY',href:'publicity.html',image: 'img/Team/logo of department/marketing.png',},
+                {    name: 'PUBLIC RELATION',href:'pr.html',image: 'img/Team/logo of department/pr.png',},
+                {    name: 'DIGITAL MARKETING',href:'dm.html',image: 'img/Team/logo of department/digital marketing.png',},
+                
                 ];
-                const teamCarousel = document.querySelector('.TEAM-carousel')[1];
+                const teamCarousel = document.querySelector('.TEAM-carousel2');
                 teamMembers.forEach(member => {
                     const memberItem = document.createElement('a');
                     memberItem.href = member.href;
@@ -161,7 +223,63 @@
             </script>
             </div>
         </div>
-        <!-- TEAM End--->
+        <!-- DEPARTMENT End--->
+
+        <!-- ADVISORS START  -->
+        <div class="container-fluid TEAM py-5 my-5">
+            <div class="container py-5">
+                <div class="section-title text-center mx-auto wow fadeInUp"
+                    data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">OUR ADVISORS</p>
+                    <h1 class="display-6"></h1>
+                </div>
+                <div class="owl-carousel TEAM-carousel4 wow fadeInUp"
+                    data-wow-delay="0.5s">
+                </div>
+                <script>
+                const ADVSMembers = [
+                    {name: "VASHISHTH DOSHI", role: "PRESIDENT 2022-23",image: "img/Team/advisors/Vashishth Doshi.JPG",},
+                    {name: "NIKHIL AGARWAL", role: "TREASURER 2022-23",image: "img/Team/advisors/nikhil agarwal.jpg",},
+                    {name: "PARTH SHAH", role: "RESEARCH HEAD 2022-23",image: "img/Team/advisors/parth shah.jpg",},
+                    {name: "ARNI SHAH", role: "DIGITAL MARKETING HEAD 2022-23",image: "img/Team/advisors/Arni parikh.jpg",},
+                    {name: "ADVAIT KABRA", role: "CONTENT AND DOCUMENTATION HEAD 2022-23",image: "img/Team/advisors/advait kabra.jpg",},
+                    {name: "NIRMIT JIKARIA", role: "EVENT MANAGEMENT HEAD 2022-23",image: "img/Team/advisors/Nirmit jikaria.jpg",},
+                    {name: "VAIDEHI PATEL", role: "GRAPHIC DESIGNING HEAD 2022-23",image: "img/Team/advisors/Vaidehi patel.jpg",},
+                    {name: "NIKISHA UPADHYAY", role: "VICE-PRESIDENT 2022-23",image: "img/Team/advisors/nikisha upadhyay.jpg",},
+                    ];
+                const ADVSCarousel = document.querySelector('.TEAM-carousel4');
+                ADVSMembers.forEach(member => {
+                    const memberItem = document.createElement('a');
+                    memberItem.href = '';
+                    memberItem.className = 'd-block TEAM-item rounded';
+            
+                    const memberImage = document.createElement('img');
+                    memberImage.src = member.image;
+                    memberImage.alt = member.name;
+            
+                    const memberInfo = document.createElement('div');
+                    memberInfo.className = 'bg-white shadow-sm text-center p-4 position-relative  mx-4';
+            
+                    const memberName = document.createElement('h4');
+                    memberName.className = 'text-primary';
+                    memberName.textContent = member.name;
+            
+                    const memberRole = document.createElement('span');
+                    memberRole.className = 'text-body';
+                    memberRole.textContent = member.role;
+            
+                    memberInfo.appendChild(memberName);
+                    memberInfo.appendChild(memberRole);
+            
+                    memberItem.appendChild(memberImage);
+                    memberItem.appendChild(memberInfo);
+            
+                    ADVSCarousel.appendChild(memberItem);
+                });
+            </script>
+            </div>
+        </div>
+        <!-- ADVISORS END  -->
 
         <!-- Footer Start -->
         <div id="footBox"

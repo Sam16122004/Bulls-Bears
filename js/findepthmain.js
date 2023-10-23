@@ -2,26 +2,26 @@ var array=[
     {
         title: "Findepth 01",
         date: "1 March 2021",
-        imgSRC:"img/FINDEPTH 01 front_page.jpg",
+        imgSRC:"img/findepth/FINDEPTH 01 front_page.jpg",
         link:"findepth1.html"
     },
 
     {
         title: "Findepth 02",
         date: "2 June 2021",
-        imgSRC:"img/FINDEPTH 02 front_page.jpg",
+        imgSRC:"img/findepth/FINDEPTH 02 front_page.jpg",
         link:"findepth2.html"
     },
     {
         title: "Findepth 03",
         date: "3 January 2022",
-        imgSRC:"img/FINDEPTH 03 front_page.jpg",
+        imgSRC:"img/findepth/FINDEPTH 03 front_page.jpg",
         link:"findepth3.html"
     },
     {
         title: "Findepth 04",
         date: "4 July 2022",
-        imgSRC:"img/FINDEPTH 04 front_page.jpg",
+        imgSRC:"img/findepth/FINDEPTH 04 front_page.jpg",
         link:"findepth4.html"
     },
     ]
