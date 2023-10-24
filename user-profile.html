@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    
+    <!-- JavaScript to parse the user parameter from the URL -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const userId = urlParams.get('user');
+    </script>
+    
+    <!-- User profiles (You can replace this with actual data) -->
+    <div id="user1" style="display:none;">
+        <h2>User 1</h2>
+        <p>Name: John Doe</p>
+        <p>Email: john.doe@example.com</p>
+        <p>Location: City 1</p>
+    </div>
+    <div id="user2" style="display:none;">
+        <h2>User 2</h2>
+        <p>Name: Jane Smith</p>
+        <p>Email: jane.smith@example.com</p>
+        <p>Location: City 2</p>
+    </div>
+    <div id="user3" style="display:none;">
+        <h2>User 3</h2>
+        <p>Name: Bob Johnson</p>
+        <p>Email: bob.johnson@example.com</p>
+        <p>Location: City 3</p>
+    </div>
+    <div id="user4" style="display:none;">
+        <h2>User 4</h2>
+        <p>Name: Alice Brown</p>
+        <p>Email: alice.brown@example.com</p>
+        <p>Location: City 4</p>
+    </div>
+    <div id="user5" style="display:none;">
+        <h2>User 5</h2>
+        <p>Name: Sarah White</p>
+        <p>Email: sarah.white@example.com</p>
+        <p>Location: City 5</p>
+    </div>
+    
+    <!-- JavaScript to display the correct user profile -->
+    <script>
+        if (userId) {
+            document.getElementById(`user${userId}`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
