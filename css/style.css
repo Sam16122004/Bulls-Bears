@@ -789,3 +789,41 @@ p {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width:1080px;
     }}
+
+    /* ...............................  */
+    .section-title2 {
+        position: relative;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .section-title2::before {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: var(--primary);
+    }
+    
+    .section-title2::after {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 28px;
+        bottom: -13px;
+        left: calc(25% - 13px);
+        background: var(--dark);
+        border: 10px solid #FFFFFF;
+        border-radius: 28px;
+    }
+    
+    .section-title2.text-center::before {
+        left: 25%;
+    }
+    
+    .section-title2.text-center::after {
+        left: calc(50% - 13px);
+    }
+    

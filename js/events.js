@@ -13,13 +13,13 @@ var array=[
         href:"event-3.html",
         reg:"",
     },
-    {
-        title: "Subcommittee Interview",
-        date: "2,3,4 September 2023",
-        imgSRC:"img/event/event-2.jpg",
-        href:"event-2.html",
-        reg:"",
-    },
+    // {
+    //     title: "Subcommittee Interview",
+    //     date: "2,3,4 September 2023",
+    //     imgSRC:"img/event/event-2.jpg",
+    //     href:"event-2.html",
+    //     reg:"",
+    // },
     {
         title: "Introductory event",
         date: "28 August 2023",

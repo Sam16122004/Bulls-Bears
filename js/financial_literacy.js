@@ -57,14 +57,6 @@ const quizData = [
     correct: "b",
   },
   {
-    question:"What does APR stand for in the context of loans?",
-    a: "Annual Percentage Rate",
-    b: "Average Principal Return",
-    c: "Annual Payment Responsibility",
-    d: "Average Payment Risk",
-    correct: "a",
-  },
-  {
     question:"What is the primary role of the Federal Reserve in the United States?",
     a: "Tax collection",
     b: "Monetary policy",
@@ -195,7 +187,6 @@ function loadQuiz(id) {
   deselectAnswers();
 
   const currentQuizData = quizData[id];
-
   questionEl.innerText = currentQuizData.question;
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
@@ -222,24 +213,25 @@ function deselectAnswers() {
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
-    if (answer === quizData[currentQuiz].correct) {
-      score++;
-    }
-
+    if (answer) {
+      if (answer === quizData[question_came_ids[currentQuiz]].correct) {
+        score++;
+      }
 
     currentQuiz++;
-    let id ;
-    do{
-     id=random();
-
-    }while(id in question_came_ids)
+  let id;
+  do {
+    id = random();
+  } while (question_came_ids.includes(id));
 
     if (currentQuiz < allowed) {
+      question_came_ids.push(id);
       loadQuiz(id);
     } else {
       quiz.innerHTML = ` <h4>You answered correctly at ${score}/${allowed} questions.</h4>
-    <div><p class="mb-2"></p></div>
-       <a href="financial_literacy.html"> <button onclick="#">Reload</button></a>`;
+      <div><p class="mb-2"></p></div>
+      <a href="financial_literacy.html"> <button onclick="#">Reload</button></a>`;
     }
   }
-});
+  }}
+);
