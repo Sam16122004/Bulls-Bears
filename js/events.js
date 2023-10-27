@@ -44,15 +44,15 @@ var array=[
         href:"event-2.html",
         reg:"",
     },
-    {
-        title: "Introductory event",
-        date: "28 August 2023",
-        time:"4 p.m. - 6 p.m.",
-        venue:"E-202",
-        imgSRC:"img/event/event-1.jpg",
-        href:"event-1.html",
-        reg:"",
-    }
+    // {
+    //     title: "Introductory event",
+    //     date: "28 August 2023",
+    //     time:"4 p.m. - 6 p.m.",
+    //     venue:"E-202",
+    //     imgSRC:"img/event/event-1.jpg",
+    //     href:"event-1.html",
+    //     reg:"",
+    // }
     ]
     function events(id){
         let load = "";
