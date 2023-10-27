@@ -21,7 +21,7 @@ load+=`<div class="container">
                     <a href="findepthmain.html" class="dropdown-item">FINDEPTH</a>
                     <a href="blog.html" class="dropdown-item">Blog</a>
                     <a href="financial_literacy.html" class="dropdown-item">FINANCIAL LITERACY</a>
-                    <a href="bazaar.bullsandbearspdeu.com" class="dropdown-item">BAZAAR</a>
+                    <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a>
                 </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
