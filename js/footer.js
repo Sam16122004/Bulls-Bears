@@ -6,7 +6,7 @@ function footBar(id) {
   data-wow-delay="0.1s">
   <div class="container py-5">
       <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
               <h4 class="text-primary mb-4">Our Location</h4>
               <p class="mb-2"><i
                       class="fa fa-map-marker-alt text-primary me-3"></i>Pandit
@@ -15,7 +15,7 @@ function footBar(id) {
                       class="fa fa-phone-alt text-primary me-3"></i>+91
                   9510882766</p>
               <p class="mb-2"><i
-                      class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                      class="fa fa-envelope text-primary me-3"></i>pdpubnb@gmail.com</p>
               <div class="d-flex pt-3">
                     <a
                         class="btn btn-square btn-primary rounded-circle me-2"
@@ -31,7 +31,7 @@ function footBar(id) {
                         href="https://www.linkedin.com/company/bulls-bearspdeu/"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
               <h4 class="text-primary mb-4">Quick Links</h4>
               <a class="btn btn-link" href="about.html">About Us</a>
               <a class="btn btn-link" href="contact.html">Contact Us</a>
@@ -40,25 +40,14 @@ function footBar(id) {
               <a class="btn btn-link" href="blog.html">Blog</a>
               <a class="btn btn-link" href="#">Photo Gallery</a>
           </div>
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
               <h4 class="text-primary mb-4">CLUB TIMINGS</h4>
               <p class="mb-1">Monday - Friday</p>
               <h6 class="text-light">09:00 am - 06:00 pm</h6>
               </div>
-              <div class="col-lg-3 col-md-6">
-              <h4 class="text-primary mb-4">Register</h4>
-              <p>Thank you for being a part of the finance world</p>
-              <div class="position-relative w-100">
-              <input
-              class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-              type="text" placeholder="Your email">
-                  <button type="button"
-                      class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                      </div>
-                      </div>
-                      </div>
-  </div>
-</div>`;
+              </div>
+              </div>
+            </div>`;
     document.getElementById(id).innerHTML = load;
 }
 //   <a
@@ -71,3 +60,15 @@ function footBar(id) {
 // href><i class="fab fa-youtube"></i></a>
 {/* <p class="mb-1">Saturday-Sunday</p>
 <h6 class="text-light">Closed</h6> */}
+
+            //   <div class="col-lg-3 col-md-6">
+            //       <h4 class="text-primary mb-4">Register</h4>
+            //       <p>Thank you for being a part of the finance world</p>
+            //       <div class="position-relative w-100">
+            //           <input
+            //           class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+            //           type="text" placeholder="Your email">
+            //           <button type="button"
+            //           class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            //       </div>
+            //   </div>

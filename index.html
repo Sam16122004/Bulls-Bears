@@ -7,7 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content name="keywords">
         <meta content name="description">
-        
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
@@ -37,8 +37,24 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/test.css" rel="stylesheet">
+        <style>
+            .testimonial-item .content {
+                max-height: 80px; /* Adjust this to your desired height */
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .testimonial-item .read-more-button {
+                text-align: center;
+            }
+            
+            .testimonial-item .read-more-button .btn-link {
+                cursor: pointer;
+                color: #007bff; /* Adjust the color to your preference */
+                text-decoration: underline;
+            }
+        </style>
     </head>
-
     <body>
         <!-- Spinner Start -->
         <div id="spinner"
@@ -48,10 +64,10 @@
         </div>
         <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div id="navBox" class="container-fluid bg-white sticky-top" >
-    </div>
-    <!-- Navbar End -->
+        <!-- Navbar Start -->
+        <div id="navBox" class="container-fluid bg-white sticky-top">
+        </div>
+        <!-- Navbar End -->
 
         <!-- Carousel Start -->
         <div class="container-fluid px-0 mb-5">
@@ -74,9 +90,9 @@
                                             class="fs-4 text-white animated zoomIn"><strong
                                                 class="text-dark">THE FINANCE
                                                 CLUB OF PDEU</strong></p>
-                                        <a href
+                                        <!-- <a href
                                             class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore
-                                            More</a>
+                                            More</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -98,9 +114,10 @@
                                             class="fs-4 text-white animated zoomIn"><strong
                                                 class="text-dark">MARKET
                                                 STIMULATION GAME</strong></p>
-                                        <a href
-                                            class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore
-                                            More</a>
+                                        <a
+                                            href="https://bazaar.bullsandbearspdeu.com"
+                                            class="btn btn-light rounded-pill py-3 px-5 animated zoomIn"
+                                            target="_blank">Explore More</a>
                                     </div>
                                 </div>
                             </div>
@@ -158,12 +175,13 @@
                         <div class="row g-3 mb-4">
                             <div class="col-sm-4">
                                 <img class="img-fluid bg-white w-100"
-                                    src="img/event/event-4.jpg" alt>
+                                    src="img/event/Baazar.png" alt>
                             </div>
                             <div class="col-sm-8">
-                                <h5>STOCKS 101</h5>
-                                <p class="mb-0">Get to know about the basics of </p><p>Stock Market </p><p>Demat Account</p><p>How Investment works
-                                </p>
+                                <h5>BAZAAR 5.0</h5>
+                                <p class="mb-0">Stocks Stimulation Game</p>
+                                <p><a href="registration_form.html">For registration click
+                                    here</a></p>
                             </div>
                         </div>
                         <div class="border-top mb-4"></div>
@@ -171,8 +189,11 @@
                             <div class="col-sm-8">
                                 <h5>BULLS & BEARS Tessaract 9.0</h5>
                                 <p></p>
-                                <p class="mb-0">In Tesseract 9.0, bulls&bears is organising its flagship event- BAZAAR and Fintasia. </p>
-                                <p><a href="event.html">For registration click here</a></p>
+                                <p class="mb-0">In Tesseract 9.0, bulls&bears is
+                                    organising its flagship event- BAZAAR 5.0 and
+                                    Fintasia. </p>
+                                <p><a href="event.html">For registration click
+                                        here</a></p>
                             </div>
                             <div class="col-sm-4">
                                 <img class="img-fluid bg-white w-100"
@@ -269,8 +290,8 @@
         
         // Add the container to the document body
         document.body.appendChild(containerFluid);
-    </script>
-                <!-- TEAM End -->
+        </script>
+        <!-- TEAM End -->
 
         <!-- blog Start -->
         <div class="container-xxl py-5">
@@ -303,7 +324,8 @@
                             rover to the nearby asteroid Bennu, collecting the
                             samples, and bringing them back to Earth. The total
                             cost of the project was around 1.16 billion dollars.</p>
-                        <a href="blog.html" class="btn btn-primary rounded-pill py-3 px-5">Read
+                        <a href="blog.html"
+                            class="btn btn-primary rounded-pill py-3 px-5">Read
                             More</a>
                     </div>
                 </div>
@@ -320,49 +342,58 @@
                             <h1 class="display-6 mb-4">SHORT <span
                                     class="text-white">FINANCIAL</span> LITERACY
                                 <span class="text-white">TEST</span></h1></div>
-                                <div class="quiz-container" id="quiz">
-                                    <div class="quiz-header">
-                                        <h4 id="question"></h4>
-                                        <ul>
-                                            <li>
-                                                <input type="radio" id="a" name="answer" class="answer" />
-                                                <label id="a_text" for="a">Question</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="b" name="answer" class="answer" />
-                                                <label id="b_text" for="b">Question</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="c" name="answer" class="answer" />
-                                                <label id="c_text" for="c">Question</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="d" name="answer" class="answer" />
-                                                <label id="d_text" for="d">Question</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button id="submit">Submit</button>
-                                </div>
-                                <div><p class="mb-2"></p></div>
-                            <a class="btn btn-light rounded-pill py-3 px-5" href="financial_literacy.html">Explore
-                                More</a>
+                        <div class="quiz-container" id="quiz">
+                            <div class="quiz-header">
+                                <h4 id="question"></h4>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="a" name="answer"
+                                            class="answer" />
+                                        <label id="a_text" for="a">Question</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="b" name="answer"
+                                            class="answer" />
+                                        <label id="b_text" for="b">Question</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="c" name="answer"
+                                            class="answer" />
+                                        <label id="c_text" for="c">Question</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="d" name="answer"
+                                            class="answer" />
+                                        <label id="d_text" for="d">Question</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button id="submit">Submit</button>
                         </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                            <button type="button" class="btn-play" data-bs-toggle="modal"
-                                data-src="https://www.youtube.com/watch?v=3tVTn7MCuRY" data-bs-target="#videoModal">
+                        <div><p class="mb-2"></p></div>
+                        <a class="btn btn-light rounded-pill py-3 px-5"
+                            href="financial_literacy.html">Explore
+                            More</a>
+                    </div>
+                    <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div
+                            class="h-100 d-flex align-items-center justify-content-center"
+                            style="min-height: 300px;">
+                            <button type="button" class="btn-play"
+                                data-bs-toggle="modal"
+                                data-src="https://www.youtube.com/watch?v=3tVTn7MCuRY"
+                                data-bs-target="#videoModal">
                                 <span></span>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- Video End -->
 
         <!-- Video Modal Start -->
-        <div class="modal modal-video fade" id="videoModal" tabindex="-1"
+        <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content rounded-0">
@@ -373,14 +404,18 @@
                             data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
+                        16:9 aspect ratio
                         <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8t5bzcoYpFo?si=Y0ibqK-pDFf5cwM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/8t5bzcoYpFo?si=Y0ibqK-pDFf5cwM3"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Video Modal End -->
 
         <!-- Event Start -->
@@ -419,155 +454,144 @@
                     <h1 class="display-6">OUR ADVISORS 2022-23</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp"
-                    data-wow-delay="0.5s" id="advs">
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">My time with Bulls&Bears was wholesome -
-                            from starting as a Public Relations member to
-                            finishing as the club’s President. I had the good
-                            fortune of being involved during an
-                            online-to-offline transition and amongst a host of
-                            creative and management ideas. It has always been an
-                            aim to maximize the club’s scope and help spread
-                            basic financial understanding. More than a club, it
-                            is a living entity - with its ever expanding
-                            audience, superb events and fantastic members.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/Vashishth Doshi.JPG" alt>
-                            <div class="text-start ms-3">
-                                <h5>VASHISTH DOSHI</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                    data-wow-delay="0.5s">
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        My time with Bulls&Bears was wholesome - from starting as a Public Relations member to finishing as the club’s President. I had the good fortune of being involved during an online-to-offline transition and amongst a host of creative and management ideas. It has always been an aim to maximize the club’s scope and help spread basic financial understanding. More than a club, it is a living entity - with its ever expanding audience, superb events and fantastic members. Greatly appreciative of the times I spent with Bulls&Bears.Cheers, VD
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/Vashishth Doshi.JPG" alt>
+                        <div class="text-start ms-3">
+                            <h5>VASHISTH DOSHI</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4"> Working with the club as a GD, DM Head,
-                            and then as Vice President has been an amazing
-                            adventure. Every year, I meet new folks, and it has
-                            been fun working with them. I had picked up new
-                            skills and strategies for dealing with varied
-                            situations with each level. This place used to feel
-                            livelier and more welcoming thanks to the core
-                            committee. BullsandBears will always remain close to
-                            my heart!!</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/nikisha upadhyay.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>NIKISHA UPADHYAY</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+                
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        Working with the club as a GD, DM Head, and then as Vice President has been an amazing adventure. Every year, I meet new folks, and it has been fun working with them. I had picked up new skills and strategies for dealing with varied situations with each level. This place used to feel livelier and more welcoming thanks to the core committee. BullsandBears will always remain close to my heart!!
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/nikisha upadhyay.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>NIKISHA UPADHYAY</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">My tenure as the Content and
-                            Documentation Head for the Finance Club at PDEU,
-                            known as the Bulls&Bear, was an incredible experience. From day one of my college journey, being a part of this club has been a golden opportunity. The club has provided invaluable lessons through various means, helping us grow in many different areas.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/advait kabra.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>ADVAIT KABRA</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        B&B has been a great part of my college journey so far, right from being a marketing subcommittee member to being the treasurer of the club. It paved the way for me in many ways, enhanced the management skills, communication skills and most importantly made me aware of the financial world more clearly. The amount of hardwork we put in running the club, in comparison to that bnb has always given more in return.The credits go to my team, Vashisht, Nikisha and all the other heads who were associated with the club. The people under whom i worked. Wishing luck to the new core.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/nikhil agarwal.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>NIKHIL AGARWAL</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">Working with bulls and bears has been a
-                            tremendous journey. A fun-filled experience with a
-                            lot of new learning opportunities, the club had it
-                            all! It definitely provided me with a stepping stone
-                            for my future endeavours and sharpened my skills.
-                            Bulls and Bears will always remain close to my
-                            heart.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/Arni parikh.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>ARNI PARIKH</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        My tenure as the Content and Documentation Head for the Finance Club at PDEU, known as the Bulls&Bear, was an incredible experience. From day one of my college journey, being a part of this club has been a golden opportunity. The club has provided invaluable lessons through various means, helping us grow in many different areas.Our exceptional core team and my dedicated C&D team have played a pivotal role in making this journey is truly remarkable. It's hard to believe how quickly these three years with the Bulls & Bears have flown by.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/advait kabra.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>ADVAIT KABRA</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">B&B has been a great part of my college
-                            journey so far, right from being a marketing
-                            subcommittee member to being the treasurer of the
-                            club. It paved the way for me in many ways, enhanced
-                            the management skills, communication skills and most
-                            importantly made me aware of the financial world
-                            more clearly. The amount of hardwork we put in
-                            running the club, in comparison to that bnb has
-                            always given more in return.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/nikhil agarwal.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>NIKHIL AGARWAL</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        My experience with BullsandBears was filled with laughter, joy and a lot of learning. I got a chance to meet new people. It was a place where I could express my creativity to the extreme. I am happy to be a part of Bulls&Bears community.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/Vaidehi patel.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>VAIDEHI PATEL</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4"> I vividly recall my exhilarating
-                            experience with the Bulls and Bears Club of PDEU.
-                            Joining this renowned club was a turning point in my
-                            academic journey as a finance enthusiast. I was
-                            whelmed by the club's dynamic atmosphere, where
-                            ambitious students shared their passion for the
-                            stock market and financial markets. The club
-                            organized engaging workshops, stimulating debates,
-                            and guest lectures, all of which deepened my
-                            understanding of finance and stocks.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/Nirmit jikaria.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>NIRMIT JIKARIA</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        Working with bulls and bears has been a tremendous journey. A fun-filled experience with a lot of new learning opportunities, the club had it all! It definitely provided me with a stepping stone for my future endeavours and sharpened my skills. Bulls and Bears will always remain close to my heart.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/Arni parikh.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>ARNI PARIKH</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4"> It has been a tremendous year with bnb
-                            team. I learnt a lot, it was fun working with the
-                            President, the Vice President and Treasurer. We
-                            accomplished alot of planned events. I wish all the
-                            very best to the new committee.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/parth shah.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>PARTH SHAH</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        It has been a tremendous year with bnb team. I learnt a lot, it was fun working with the President, the Vice President and Treasurer. We accomplished alot of planned events. I wish all the very best to the new committee.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/parth shah.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>PARTH SHAH</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
-                    <div class="testimonial-item p-4 p-lg-5">
-                        <p class="mb-4">My experience with BullsandBears was
-                            filled with laughter, joy and a lot of learning. I
-                            got a chance to meet new people. It was a place
-                            where I could express my creativity to the extreme.
-                            I am happy to be a part of Bulls&Bears community.</p>
-                        <div
-                            class="d-flex align-items-center justify-content-center">
-                            <img class="img-fluid flex-shrink-0"
-                                src="img/Team/advisors/Vaidehi patel.jpg" alt>
-                            <div class="text-start ms-3">
-                                <h5>VAIDEHI PATEL</h5>
-                                <span class="text-primary">ADVISOR</span>
-                            </div>
+                </div>
+
+                <div class="testimonial-item p-4 p-lg-5">
+                    <div class="content">
+                        I vividly recall my exhilarating experience with the Bulls and Bears Club of PDEU. Joining this renowned club was a turning point in my academic journey as a finance enthusiast. I was whelmed by the club's dynamic atmosphere, where ambitious students shared their passion for the stock market and financial markets. The club organized engaging workshops, stimulating debates, and guest lectures, all of which deepened my understanding of finance and stocks. I fondly remember participating in thrilling stock trading simulations, where we gained our analytical skills and learnt to navigate the fluctuations of the market. The friendly environment within the club was remarkable. Overall, the Bulls and Bears Club not only provided me with invaluable knowledge and practical skills but also fostered a sense of belonging to a community of like-minded individuals and increased my networking skills as well. It was an experience that undoubtedly shaped my path toward a successful career in finance.
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-link read-more">Read More</button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-fluid flex-shrink-0"
+                            src="img/Team/advisors/Nirmit jikaria.jpg" alt>
+                        <div class="text-start ms-3">
+                            <h5>NIRMIT JIKARIA</h5>
+                            <span class="text-primary">ADVISOR</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- Advisors End -->
 
@@ -619,7 +643,8 @@
         <!-- Contact Start -->
 
         <!-- Footer Start -->
-        <div id="footBox" class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn"
+        <div id="footBox"
+            class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn"
             data-wow-delay="0.1s">
         </div>
         <!-- Footer End -->
@@ -645,6 +670,34 @@
         <a href="#"
             class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
                 class="bi bi-arrow-up"></i></a>
+
+                <!-- <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var btnText = document.getElementById("myBtn");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                      }
+                    }
+                    </script> -->
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $(".read-more").click(function () {
+                                var content = $(this).parent().prev(".content");
+                                content.css("max-height", "none");
+                                $(this).hide();
+                            });
+                        });
+                    </script>
 
         <!-- JavaScript Libraries -->
         <script

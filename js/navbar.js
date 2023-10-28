@@ -19,6 +19,7 @@ load+=`<div class="container">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu bg-light rounded-0 m-0">
                     <a href="findepthmain.html" class="dropdown-item">FINDEPTH</a>
+                    <a href="photo gallery.html" class="dropdown-item">IMAGE GALLERY</a>
                     <a href="blog.html" class="dropdown-item">Blog</a>
                     <a href="financial_literacy.html" class="dropdown-item">FINANCIAL LITERACY</a>
                     <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a>
