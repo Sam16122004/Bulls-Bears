@@ -192,7 +192,7 @@
          <div class="col-md-4">
             <div class="card shadow mb-4" style="height:98%;">
                <div class="card-body">
-                  <img class="img-fluid" src="img/event/event-4.jpg">
+                  <img class="img-fluid" src="img/event/Baazar.png">
                </div>
             </div>
          </div>
