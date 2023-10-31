@@ -78,7 +78,7 @@
    <div class="container mt-3">
       <div class="row">
          <div class="col-md-8">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="http://bullsandbearspdeu.com/registration_form.php" method="post" enctype="multipart/form-data">
                <div class="card shadow mb-4">
                   <div class="card-body">
                      <div class="form-row">
