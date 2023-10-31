@@ -10,7 +10,7 @@ function footBar(id) {
               <h4 class="text-primary mb-4">Our Location</h4>
               <p class="mb-2"><i
                       class="fa fa-map-marker-alt text-primary me-3"></i>Pandit
-                  Denndayal Energy University,Gandhinagar</p>
+                  Deendayal Energy University,Gandhinagar</p>
               <p class="mb-2"><i
                       class="fa fa-phone-alt text-primary me-3"></i>+91
                   9510882766</p>
