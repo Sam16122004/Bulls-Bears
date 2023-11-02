@@ -57,6 +57,7 @@ var array=[
     function events(id){
         let load = "";
         for(i=0;i<array.length;i++){
+            console.log(array[i])
             load +=`<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.${i+2}s">
                 <div class="segment-item position-relative text-center">
                     <img class="img-fluid" src="${array[i].imgSRC}" alt="">
