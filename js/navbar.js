@@ -22,10 +22,9 @@ load+=`<div class="container">
                     <a href="photo gallery.html" class="dropdown-item">IMAGE GALLERY</a>
                     <a href="blog.html" class="dropdown-item">Blog</a>
                     <a href="financial_literacy.html" class="dropdown-item">FINANCIAL LITERACY</a>
-                    <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a>
-                </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
         <div class="border-start ps-4 d-none d-lg-block">
             <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
@@ -35,3 +34,5 @@ load+=`<div class="container">
 </div>`;
   document.getElementById(id).innerHTML = load;
 }
+
+{/* <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a> */}
