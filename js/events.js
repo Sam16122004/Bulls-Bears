@@ -15,7 +15,7 @@ var array=[
         venue:"BLT-1",
         imgSRC:"img/event/Baazar.png",
         href:"event-5.html",
-        reg:"./registration_form.php",
+        reg:"registration_form.html",
     },
     {
         title: "STOCKS 101",
