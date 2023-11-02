@@ -89,7 +89,7 @@ var array=[
                 </div>
                 <div class="segment-overlay">
                     <a href="${array[i].href}" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                    <a href="${array[i].reg}" class="btn btn-dark rounded-pill py-2 px-4 m-2">Register for the event <i class="fa fa-arrow-right ms-2"></i></a>
+                    <a href="./${array[i].reg}" class="btn btn-dark rounded-pill py-2 px-4 m-2">Register for the event <i class="fa fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>`;
