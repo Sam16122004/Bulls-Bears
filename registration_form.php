@@ -9,7 +9,7 @@
    <meta content name="description" />
 
    <!-- Favicon -->
-   <link href="img/favicon.ico" rel="icon" />
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
    <!-- Google Web Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -192,7 +192,7 @@
          <div class="col-md-4">
             <div class="card shadow mb-4" style="height:98%;">
                <div class="card-body">
-                  <img class="img-fluid" src="img/event/event-4.jpg">
+                  <img class="img-fluid" src="img/event/Baazar.png">
                </div>
             </div>
          </div>
