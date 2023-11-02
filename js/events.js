@@ -6,7 +6,7 @@ var array=[
         venue:"D-002",
         imgSRC:"img/event/Fintasia.jpg",
         href:"event-6.html",
-        reg:"expire.html",
+        reg:"https://shorturl.at/lmFR2",
     },
     {
         title: "BAZAAR 5.0",
@@ -15,7 +15,8 @@ var array=[
         venue:"BLT-1",
         imgSRC:"img/event/Baazar.png",
         href:"event-5.html",
-        reg:"registration_form.html",
+        reg:"https://shorturl.at/cmCFM",
+        // reg:"registration_form.html",
     },
     {
         title: "STOCKS 101",
