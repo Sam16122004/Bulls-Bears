@@ -35,4 +35,4 @@ load+=`<div class="container">
   document.getElementById(id).innerHTML = load;
 }
 
-{/* <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a> */}
+    {/* <a href="https://bazaar.bullsandbearspdeu.com" class="dropdown-item" target="_blank">BAZAAR</a> */}
