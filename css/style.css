@@ -642,7 +642,7 @@ h3 {
 }
 
 p {
-	padding: 0px 30px 10px 30px;
+	padding: 0px 30px 10px 0px;
 	/* text-align: justify; */
 	font-size: 14px;
 }
